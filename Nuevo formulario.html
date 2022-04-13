@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <!--cabezera de la pagina-->
+        <h1>AdoptamePliss</h1>
+    </header>
+
+    <nav class="contenedormenu">
+        <!--Menu-->
+        <nav class="menu">
+            <a href="home.html"> home</a>
+            <a href="adoptame.html">adoptame</a>
+            <a href="tienda.html">tienda</a>
+            <a href="veterinario.html">veterinaria</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <form action="" class="formulario" id="formulario">
+
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre completo dueño:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Eje: Alberto Dias">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+            </div>
+
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+            </div>
+
+            <!-- Grupo: especie -->
+            <div class="formulario__grupo" id="grupo__especie">
+                <label for="especie" class="formulario__label">especie:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="especie" id="especie" placeholder="Ej: gato">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+            </div>
+
+            <!-- boton Siguiente-->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Siguiente</button>
+            </div>
+
+            <!-- boton borrar-->
+            <input type="reset" value="borrar">
+        </form>
+    </main>
+
+    <script src="https://kit.fontawesome.com/84319aa48d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

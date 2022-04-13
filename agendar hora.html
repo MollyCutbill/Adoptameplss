@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar hora</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <!--cabezera de la pagina-->
+        <h1>AdoptamePliss</h1>
+    </header>
+
+    <nav class="contenedormenu">
+        <!--Menu-->
+        <nav class="menu">
+            <a href="home.html"> home</a>
+            <a href="adoptame.html">adoptame</a>
+            <a href="tienda.html">tienda</a>
+            <a href="veterinario.html">veterinaria</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- grupo de tiempo-->
+    <main>
+
+        <form action="" class="formulario" id="formulario">
+
+            <div id="date">
+                <label for="fecha" class="formulario__label">Fecha:</label>
+                <input type="date" required>
+            </div>
+            <div id="time">
+                <label for="Hora" class="formulario__label">Hora:</label>
+                <input type="time" required>
+            </div>
+
+            <label for="Servicio"> Seleccione tipo de Servicio </label>
+            <select name="Servicio" id="Servicio">
+                <option value="Opcion"> Opcion </option>
+                <option value="Veterinario"> Veterinario </option>
+                <option value="Peluquero"> Peluquero </option>
+            </select>
+            <!-- boton enviar-->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+            </div>
+
+            <!-- boton borrar-->
+            <input type="reset" value="borrar">
+        </form>
+    </main>
+    <script src="https://kit.fontawesome.com/84319aa48d.js" crossorigin="anonymous"></script>
+</body>

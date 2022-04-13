@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>tienda</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!--cabezera de la pagina-->
+        <h1>AdoptamePliss</h1>
+    </header>
+
+    <nav>
+        <!--Menu-->
+        <nav class="menu">
+            <a href="home.html"> home</a>
+            <a href="adoptame.html">adoptame</a>
+            <a href="tienda.html">tienda</a>
+            <a href="veterinario.html">veterinaria</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </nav>
+    <!--carrusel-->
+
+    <img src="img/horario2.png" width=" 1000">
+
+    <!--Sub-titulo-->
+    <h1>pedido de atención</h1>
+
+
+    <!--El cliente Usuario debe llenar con su inforcación de forma obligatora-->
+
+    <main>
+
+        <form action="" class="formulario" id="formulario">
+
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre completo dueño:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Eje: Alberto Dias">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">solo se permite letras sin guion y sin numero.</p>
+            </div>
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+            </div>
+
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+            </div>
+
+            <!-- Grupo: Mascota -->
+            <div class="formulario__grupo" id="grupo__mascota">
+                <label for="mascota" class="formulario__label">Nombre mascota:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="mascota" id="mascota" placeholder="Ej: Juanin">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">solo se permite letras sin guion y sin numero.</p>
+            </div>
+
+            <!-- Grupo: especie -->
+            <div class="formulario__grupo" id="grupo__especie">
+                <label for="especie" class="formulario__label">especie:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="especie" id="especie" placeholder="Ej: gato">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">solo se permite letras sin guion y sin numero.</p>
+            </div>
+
+            <!-- grupo de tiempo-->
+            <div id="date">
+                <label for="fecha" class="formulario__label">Fecha:</label>
+                <input type="date" required>
+            </div>
+            <div id="time">
+                <label for="Hora" class="formulario__label">Hora:</label>
+                <input type="time" required>
+            </div>
+
+
+
+            <!-- Grupo: mensaje btn error -->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+            </div>
+
+            <!-- Grupo: Boton de Enviar -->
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+        </form>
+    </main>
+
+    <footer>
+        <!--pie de pagina-->
+
+        <!--informacion de las redes sociales-->
+        <hr>
+        <nav class="informaciones">
+            <!--es para que aparesca una linea separadora de la pagina con la 
+      información de contacto-->
+            <br>
+            <p>si quieres saber mas de nosotros contactanos:</p>
+            <section id="contacto"></section>
+            <ul>
+                <li> Facebook: adoptaPliss </li>
+                <li> WhatsApp: +5697652834 </li>
+                <li> telefono: +564583645 </li>
+                <li> Instagram: AdoptamePliss </li>
+                <br>
+            </ul>
+            </hr>
+        </nav>
+    </footer>
+
+
+    <script src="formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

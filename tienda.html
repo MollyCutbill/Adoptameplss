@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tienda</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        img {
+            max-width: 100%
+        }
+        
+        nav {
+            max-width: 100%
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="titulo">
+
+        <header>
+            <!--cabezera de la pagina-->
+            <h1>AdoptamePliss</h1>
+        </header>
+        <nav>
+            <nav class="menu">
+                <!--menu-->
+                <a href="home.html"> home</a>
+                <a href="adoptame.html">adoptame</a>
+                <a href="tienda.html">tienda</a>
+                <a href="veterinario.html">veterinaria</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </nav>
+
+        <section>
+            <div class="container">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/tienda2.jpg" style="width:90%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/tienda3.jpg" style="width:90%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/tienda1.jpg" style="width:90%;">
+                        </div>
+
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id=c ontenido>
+            <!--cuerpo de la pagina-->
+
+            <!--cometario de bienvenida-->
+            <h3 id="cometario">Los mejores articulos para su mascota</h3>
+            <p id="cometario">En esta pagina podras ver todos los productos que tenemos para tu hermoso amigo, solo ven y ve los hermosos regalos que tenemos para el consentido de la Casa
+            </p>
+
+
+            <form>
+
+                <nav id="productos">
+                    <a href="#casaPerro">Casa perro</a> -
+                    <a href="#casaGato">Casa gato</a> -
+                    <a href="#juguetePerro">Juguete perro</a> -
+                    <a href="#jugueteGato">Juguete gato</a> -
+                    <a href="#comidaPerro">Comida perro</a> -
+                    <a href="#comidaGato">Comida gato</a> -
+                    <a href="#jaulas">jaulas</a> -
+                    <a href="#accesorioPerro">Accesorios perro</a> -
+                    <a href="#accesorioGato">Accesorios gato</a>
+
+                    <!--<ul>
+                        <li>
+                            Casas: <a href="#casaPerro">perro</a> -
+                            <a href="#casaGato">gato</a>
+                        </li>
+                        <li>
+                            Juguetes: <a href="#juguetePerro">perro</a> -
+                            <a href="#jugueteGato">gato</a>
+                        </li>
+                        <li>
+                            Comida: <a href="#comidaPerro">perro</a> -
+                            <a href="#comidaGato">gato</a>
+                        </li>
+                        <li><a href="#jaulas">Jaulas</a></li>
+                        <li>
+                            Accesorios: <a href="#accesorioPerro">perro</a>
+                            <a href="#accesorioGato">gato</a>
+                        </li>
+
+                    </ul>-->
+                    <!--opciones de productos -->
+
+
+                </nav>
+
+            </form>
+
+            <section id="content">
+                <hr/>
+
+                <h3>Casas para perros: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="casaPerro">
+
+
+                    <article class="articulo">
+                        <h4>Casa para perro</h4>
+                        <p>$65.000</p>
+                        <img src="img/casaperro1.jpg" alt="casaP1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa para perro</h4>
+                        <p>$100.000</p>
+                        <img src="img/casaperro2.jpg" alt="casaP2" width="240em">
+
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa para perro</h4>
+                        <p>$120.000</p>
+                        <img src="img/casaperro3.jpg" alt="casaP3" width="240em">
+
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa para perro</h4>
+                        <p>$95.000</p>
+                        <img src="img/casaperro4.jpg" alt="casaP4" width="240em">
+
+                    </article>
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Casas para gatos: <a href="#productos">↑</a></h3>
+                <hr/>
+
+
+                <section id="casaGato">
+
+                    <article class="articulo">
+                        <h4>Casa para gato</h4>
+                        <p>$35.000</p>
+                        <img src="img/casagato1.jpg" alt="casaG1" width="240em">
+
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa Rascador para gato</h4>
+                        <p>$45.000</p>
+                        <img src="img/casagato2.jpg" alt="casaG2" width="240em">
+
+
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa para gato</h4>
+                        <p>$35.000</p>
+                        <img src="img/casagato3.jpg" alt="casaG3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa para gato</h4>
+                        <p>$50.000</p>
+                        <img src="img/casagato4.jpg" alt="casaG4" width="240em">
+
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa rascador para gato</h4>
+                        <p>$90.000</p>
+                        <img src="img/casagato5.jpg" alt="casaG5" width="240em">
+
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Casa rascador para gato</h4>
+                        <p>$75.000</p>
+                        <img src="img/casagato6.jpg" alt="casaG6" width="240em">
+
+                    </article>
+
+
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Juguetes para perros: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="juguetePerro">
+
+
+                    <article class="articulo">
+                        <h4>Juguete perro</h4>
+                        <p>$4.000</p>
+                        <img src="img/jugueteperro1.jpg" alt="jp1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Juguete perro</h4>
+                        <p>$5.000</p>
+                        <img src="img/jugueteperro2.jpg" alt="jp2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Juguete perro</h4>
+                        <p>$15.000</p>
+                        <img src="img/jugueteperro3.jpg" alt="jp3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Juguete perro</h4>
+                        <p>$6.000</p>
+                        <img src="img/jugueteperro4.jpg" alt="jp4" width="240em">
+                    </article>
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Juguetes para gatos: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="jugueteGato">
+
+                    <article class="articulo">
+                        <h4>Juguete gato</h4>
+                        <p>$6.000</p>
+                        <img src="img/juguetegato1.jpg" alt="jg1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Juguete gato</h4>
+                        <p>$3.000</p>
+                        <img src="img/juguetegato2.jpg" alt="jg2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Juguete gato</h4>
+                        <p>$5.000</p>
+                        <img src="img/juguetegato3.jpg" alt="jg3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Juguete gato</h4>
+                        <p>$12.000</p>
+                        <img src="img/juguetegato4.jpg" alt="jg4" width="240em">
+                    </article>
+
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Comida para perros: <a href="#productos">↑</a></h3>
+                <hr/>
+
+
+                <section id="comidaPerro">
+
+                    <article class="articulo">
+                        <h4>Comida NutraGold</h4>
+                        <p>$50.000</p>
+                        <img src="img/comidaperro1.jpg" alt="cp1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Comida EarthBorn</h4>
+                        <p>$38.000</p>
+                        <img src="img/comidaperro2.jpg" alt="cp2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Comida Oven Braken Perro</h4>
+                        <p>$40.000</p>
+                        <img src="img/comidaperro3.jpg" alt="cp3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Comida Taste of the wild Perro</h4>
+                        <p>$48.000</p>
+                        <img src="img/comidaperro5.jpg" alt="cp5" width="240em">
+                    </article>
+
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Comida para gatos: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="comidaGato">
+
+                    <article class="articulo">
+                        <h4>Comida Acana</h4>
+                        <p>$50.000</p>
+                        <img src="img/comidagato1.jpg" alt="cg1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Comida Bravery</h4>
+                        <p>$45.000</p>
+                        <img src="img/comidagato2.jpg" alt="cg2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Comida josera</h4>
+                        <p>$42.000</p>
+                        <img src="img/comidagato3.jpg" alt="cg3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Comida N&D</h4>
+                        <p>$45.000</p>
+                        <img src="img/comidagato5.jpg" alt="cg5" width="240em">
+                    </article>
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Jaulas: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="jaulas">
+
+                    <article class="articulo">
+                        <h4>Jaula transportadora</h4>
+                        <p>$7.000</p>
+                        <img src="img/jaula.jpg" alt="j1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Jaula</h4>
+                        <p>$25.000</p>
+                        <img src="img/jaula2.jpg" alt="j2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Jaula</h4>
+                        <p>$20.000</p>
+                        <img src="img/jaula3.jpg" alt="j3" width="240em">
+                    </article>
+
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Accesorios para perros: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="accesorioPerro">
+
+                    <article class="articulo">
+                        <h4>Collar</h4>
+                        <p>$3.500</p>
+                        <img src="img/accesorioperro1.jpg" alt="ap1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Cepillo</h4>
+                        <p>$5.000</p>
+                        <img src="img/accesorioperro2.jpg" alt="ap2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Limpia patas</h4>
+                        <p>$6.000</p>
+                        <img src="img/accesorioperro3.jpg" alt="ap3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Collar</h4>
+                        <p>$3.000</p>
+                        <img src="img/accesorioperro4.jpg" alt="ap4" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Bolsas</h4>
+                        <p>$4.000</p>
+                        <img src="img/accesorioperro5.jpg" alt="ap5" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Plato doble</h4>
+                        <p>$5.000</p>
+                        <img src="img/accesorioperro6.jpg" alt="ap6" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Plato</h4>
+                        <p>$3.000</p>
+                        <img src="img/accesorioperro7.jpg" alt="ap7" width="240em">
+                    </article>
+
+                </section>
+
+                <br/>
+                <hr/>
+                <h3>Accesorio para gatos: <a href="#productos">↑</a></h3>
+                <hr/>
+
+                <section id="accesorioGato">
+
+                    <article class="articulo">
+                        <h4>Plato con bebedero</h4>
+                        <p>$11.000</p>
+                        <img src="img/accesoriogato1.jpg" alt="ag1" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Plato con bebedero</h4>
+                        <p>$10.000</p>
+                        <img src="img/accesoriogato2.jpg" alt="ag2" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Hamaca gato</h4>
+                        <p>$12.000</p>
+                        <img src="img/accesoriogato3.jpg" alt="ag3" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Cama gato</h4>
+                        <p>$20.000</p>
+                        <img src="img/accesoriogato4.jpg" alt="ag4" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Plato de agua automático</h4>
+                        <p>$25.000</p>
+                        <img src="img/accesoriogato5.jpg" alt="ag5" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Arenero</h4>
+                        <p>$5.000</p>
+                        <img src="img/accesoriogato6.jpg" alt="ag6" width="240em">
+                    </article>
+
+                    <article class="articulo">
+                        <h4>Guante para cepillado</h4>
+                        <p>$4.000</p>
+                        <img src="img/accesoriogato7.jpg" alt="ag7" width="240em">
+                    </article>
+
+                </section>
+
+
+            </section>
+
+            <div id="clearfix"></div>
+            <!--es para que los elementos de abajo no suban-->
+
+        </section>
+        <!--informacion de las redes sociales-->
+
+        <footer>
+            <!--pie de pagina-->
+
+            <!--informacion de las redes sociales-->
+            <hr>
+            <nav class="informaciones">
+                <!--es para que aparesca una linea separadora de la pagina con la 
+            información de contacto-->
+                <br>
+                <p>si quieres saber mas de nosotros contactanos:</p>
+                <section id="contacto"></section>
+                <ul>
+                    <li> Facebook: adoptaPliss </li>
+                    <li> WhatsApp: +5697652834 </li>
+                    <li> telefono: +564583645 </li>
+                    <li> Instagram: AdoptamePliss </li>
+                    <br>
+                </ul>
+                </hr>
+            </nav>
+        </footer>
+
+        <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    </div>
+</body>
+
+</html>
