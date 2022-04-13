@@ -34,7 +34,7 @@ nav {
     line-height: 30px;
     text-align: left;
     max-width: 100%;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 10px #00000033;
     /*position: fixed;*/
 }
 
