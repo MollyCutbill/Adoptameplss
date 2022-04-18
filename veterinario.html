@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>tienda</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+    <script src='formulario.js'></script>
+    
 </head>
 
 <body>
@@ -39,83 +43,19 @@
     <!--El cliente Usuario debe llenar con su inforcación de forma obligatora-->
 
     <main>
-
         <form action="" class="formulario" id="formulario">
 
-            <!-- Grupo: Nombre -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label">Nombre completo dueño:</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Eje: Alberto Dias">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">solo se permite letras sin guion y sin numero.</p>
-            </div>
+            <form class='contacto'>
+                <div><label>Tu Nombre:</label><input type='text' class='nombre' value=''></div>
+                <div><label>Tu Email:</label><input type='text' class='email' value=''></div>
+                <div><label>telefono:</label><input type='number' class='telefono' value=''></div>
+                <div><label>Mensaje:</label><textarea rows='6' class='mensaje'></textarea></div>
+                <div><input type='submit' value='Envia Mensaje' class='boton'></div>
 
-            <!-- Grupo: Teléfono -->
-            <div class="formulario__grupo" id="grupo__telefono">
-                <label for="telefono" class="formulario__label">Teléfono</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-            </div>
-
-            <!-- Grupo: Correo Electronico -->
-            <div class="formulario__grupo" id="grupo__correo">
-                <label for="correo" class="formulario__label">Correo Electrónico</label>
-                <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-            </div>
-
-            <!-- Grupo: Mascota -->
-            <div class="formulario__grupo" id="grupo__mascota">
-                <label for="mascota" class="formulario__label">Nombre mascota:</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="mascota" id="mascota" placeholder="Ej: Juanin">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">solo se permite letras sin guion y sin numero.</p>
-            </div>
-
-            <!-- Grupo: especie -->
-            <div class="formulario__grupo" id="grupo__especie">
-                <label for="especie" class="formulario__label">especie:</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="especie" id="especie" placeholder="Ej: gato">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">solo se permite letras sin guion y sin numero.</p>
-            </div>
-
-            <!-- grupo de tiempo-->
-            <div id="date">
-                <label for="fecha" class="formulario__label">Fecha:</label>
-                <input type="date" required>
-            </div>
-            <div id="time">
-                <label for="Hora" class="formulario__label">Hora:</label>
-                <input type="time" required>
-            </div>
-
-
-
-            <!-- Grupo: mensaje btn error -->
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
-            </div>
-
-            <!-- Grupo: Boton de Enviar -->
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-            </div>
+            <!-- boton borrar-->
+            <input type="reset" value="borrar">
         </form>
-        </form>
+    
     </main>
 
     <footer>
@@ -125,24 +65,28 @@
         <hr>
         <nav class="informaciones">
             <!--es para que aparesca una linea separadora de la pagina con la 
-      información de contacto-->
+        información de contacto-->
             <br>
             <p>si quieres saber mas de nosotros contactanos:</p>
-            <section id="contacto"></section>
-            <ul>
-                <li> Facebook: adoptaPliss </li>
-                <li> WhatsApp: +5697652834 </li>
-                <li> telefono: +564583645 </li>
-                <li> Instagram: AdoptamePliss </li>
-                <br>
-            </ul>
+            <section class="buttons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i> </a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i> </a>
+              </section>
             </hr>
         </nav>
     </footer>
-
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script src="formulario.js"></script>
+
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    
+    
 </body>
 
 </html>
