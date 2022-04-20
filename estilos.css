@@ -255,7 +255,7 @@ form .error {
         width: 100%;
     }
     .menu a {
-        position: fixed;
+        display: none;
     }
     .hamburguer {
         display: block;
