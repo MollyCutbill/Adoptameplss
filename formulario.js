@@ -1,32 +1,40 @@
-
-$(document).ready(function () {
+$(document).ready(function() {
     var emailreg = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-    $(".boton").click(function (){
+    $(".boton").click(function() {
         $(".error").remove();
-        if( $(".nombre").val() == "" ){
+        if ($(".nombre").val() == "") {
             $(".nombre").focus().after("<span class='error'>Ingrese su nombre</span>");
             return false;
-        }else if( $(".email").val() == "" || !emailreg.test($(".email").val()) ){
+        } else if ($(".email").val() == "" || !emailreg.test($(".email").val())) {
             $(".email").focus().after("<span class='error'>Ingrese un email correcto</span>");
             return false;
-        }else if( $(".telefono").val() == ""){
+        } else if ($(".telefono").val() == "") {
             $(".telefono").focus().after("<span class='error'>Ingrese un telefono</span>");
             return false;
-        }else if( $(".mensaje").val() == "" ){
+        } else if ($(".mensaje").val() == "") {
             $(".mensaje").focus().after("<span class='error'>Ingrese un mensaje</span>");
             return false;
         }
     });
-    $(".nombre, .telefono, .mensaje").keyup(function(){
-        if( $(this).val() != "" ){
+    $(".nombre, .telefono, .mensaje").keyup(function() {
+        if ($(this).val() != "") {
             $(".error").fadeOut();
             return false;
         }
     });
-    $(".email").keyup(function(){
-        if( $(this).val() != "" && emailreg.test($(this).val())){
+    $(".email").keyup(function() {
+        if ($(this).val() != "" && emailreg.test($(this).val())) {
             $(".error").fadeOut();
             return false;
         }
     });
 });
+
+//menu
+
+//let menu2 = document.querySelectorAll(".menu2")[0];
+//let semaforo = true;
+
+//document.querySelectorAll(".hamburguer")[0].addEventListener("click", function() {
+//    menu2.classList.toggle("menu2")
+//})
