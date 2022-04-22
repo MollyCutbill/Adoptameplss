@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
     <script src='formulario.js'></script>
-    
+
 </head>
 
 <body>
@@ -22,16 +22,24 @@
         <h1>AdoptamePliss</h1>
     </header>
 
-    <nav>
+    <section class="contenedormenu">
         <!--Menu-->
-        <nav class="menu">
+        <div class="menu">
             <a href="index.html"> home</a>
             <a href="adoptame.html">adoptame</a>
             <a href="tienda.html">tienda</a>
             <a href="veterinario.html">veterinaria</a>
             <a href="#contacto">Contacto</a>
-        </nav>
-    </nav>
+        </div>
+        <div class="menu2">
+            <a href="iniciar sesion.html"> Iniciar sesión</a>
+            <a href="usuario.html">Crear usuario</a>
+        </div>
+        <div class="hamburguer">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
     <!--carrusel-->
 
     <img src="img/horario2.png" width=" 1000">
@@ -52,10 +60,10 @@
                 <div><label>Mensaje:</label><textarea rows='6' class='mensaje'></textarea></div>
                 <div><input type='submit' value='Envia Mensaje' class='boton'></div>
 
-            <!-- boton borrar-->
-            <input type="reset" value="borrar">
-        </form>
-    
+                <!-- boton borrar-->
+                <input type="reset" value="borrar">
+            </form>
+
     </main>
 
     <footer>
@@ -72,7 +80,7 @@
                 <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="twitter"><i class="fab fa-twitter"></i> </a>
                 <a href="#" class="instagram"><i class="fab fa-instagram"></i> </a>
-              </section>
+            </section>
             </hr>
         </nav>
     </footer>
@@ -85,8 +93,9 @@
     <script src="formulario.js"></script>
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    
-    
+    <script src="https://kit.fontawesome.com/84319aa48d.js" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
