@@ -43,61 +43,66 @@
 
 
     <div class="container">
+        <div class="row text-center login-page">
+            <form action="" method="POST" id="form">
+                <div class="form">
+                    <h2 class="title">Registrarme</h2>
+                    <form action="#" name="registration">
 
-        <form>
-            <div class="container">
-                <h2 class="title">Registrarme</h2>
-                <form action="#" name="registration">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="firstname" placeholder="Carlos">
 
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="firstname" placeholder="Carlos">
+                        <label for="apellido">Apellidos</label>
+                        <input type="text" name="apellido" id="lastname" placeholder="Perez">
 
-                    <label for="apellido">Apellidos</label>
-                    <input type="text" name="apellido" id="lastname" placeholder="Perez">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="carlitos@gmail.com">
 
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="carlitos@gmail.com">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="contraseña" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
 
-                    <label for="contraseña">Contraseña</label>
-                    <input type="password" name="contraseña" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
-
-                    <div class="row">
-                        <div class="col-md-12 login-from-row">
-                            <button class="btn btn-info">Crear usuario</button>
+                        <div class="row">
+                            <div class="col-md-12 login-from-row">
+                                <button type="submit" class="btn btn-info">Crear usuario</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- boton borrar-->
-                    <input type="reset" value="borrar">
+                        <!-- boton borrar-->
+                        <input type="reset" value="borrar">
 
+                        <p class="warnings" id="warnings"></p>
+                    </form>
 
-            </div>
+                </div>
 
             </form>
-            <footer>
-                <!--pie de pagina-->
+        </div>
+    </div>
+    <footer>
+        <!--pie de pagina-->
 
-                <!--informacion de las redes sociales-->
-                <hr>
-                <nav class="informaciones">
-                    <!--es para que aparesca una linea separadora de la pagina con la 
+        <!--informacion de las redes sociales-->
+        <hr>
+        <nav class="informaciones">
+            <!--es para que aparesca una linea separadora de la pagina con la 
             información de contacto-->
-                    <br>
-                    <p>si quieres saber mas de nosotros contactanos:</p>
-                    <section class="buttons">
-                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="twitter"><i class="fab fa-twitter"></i> </a>
-                        <a href="#" class="instagram"><i class="fab fa-instagram"></i> </a>
-                    </section>
-                    </hr>
-                </nav>
-            </footer>
-            <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script-->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-            <script src="https://kit.fontawesome.com/84319aa48d.js" crossorigin="anonymous"></script>
+            <br>
+            <p>si quieres saber mas de nosotros contactanos:</p>
+            <section class="buttons">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i> </a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i> </a>
+            </section>
+            </hr>
+        </nav>
+    </footer>
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/84319aa48d.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
